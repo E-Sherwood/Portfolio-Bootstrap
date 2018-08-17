@@ -1,1 +1,10 @@
-
+.header{
+    background-color:#4aaaa5;
+}
+#space {
+    background-color: #4aaaa5;
+    height: 5px;
+    margin: 0 auto;
+    width: inherit;
+    clear: both;
+}

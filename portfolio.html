@@ -5,33 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href=assets\css\reset.css rel="stylesheet">
-    <link href=assets\css\style.css rel="stylesheet">
+    <!-- <link href=assets\css\style.css rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href=assets\css\override.css rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+                    </li>  
+                    <li><a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </nav>
+              <div class="jumbotron jumbotron-fluid header">
+                    <div class="container">
+                      <h1 class="display-6">Elliott Sherwood</h1>
+                    </div>
+                  </div>
 
-    <header style="margin-bottom:45px">Elliott Sherwood</header>
 <div>
 <h2>Portfolio</h2>
     <hr>
-    <!--not exact, but better-->
-    <article id="lefty"><p>SpaceCat Scratch Game</p>
-        <img id=image src=assets\images\SpaceCat-Scratch.PNG height="50px" width="50px">
-    </article>
-    <article style=float:right;position:relative;margin:auto;margin-right:100px;><p>Nekrogoblikon Fanpage HTML</p>
-        <img style=float:right id=image src=assets\images\NekrogoblikonFanpage.PNG height="50px" width="50px">
-    </article>
-    <article id="lefty"><p>Project Vulcan RPGMaker VX Ace (WIP)</p>
-        <img id=image src=assets\images\ProjectVulcan.PNG height="50px" width="50px">
-    </article>    
-    <article style=float:right;margin-right:100px;><p>Placeholder Project Example</p>
-        <img style=float:right id=image src=assets\images\shrug.jpg>
-    </article>
-    <!--figured out the overflow:hidden attribute to hide scroll bar (woot)-->
+    <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Space-Cat Scratch Game</h5>
+                  <img src=assets\images\SpaceCat-Scratch.PNG style="width: 250px; height:200px">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Nekrgoblikon Fanpage HTML</h5>
+                  <img src=assets\images\NekrogoblikonFanpage.PNG style="width: 250px; height:200px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Project Vulcan - RPGMakerVXAce</h5>
+                      <img src=assets\images\ProjectVulcan.PNG style="width: 250px; height:200px">  
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Placeholder Project Example</h5>
+                      <img src=assets\images\shrug.jpg style="width: 250px; height:200px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+  
     <hr id=space>
-    <footer>
-        Copyright info
-    </footer>
+    <ul class="nav position-bottom bg-dark nav-light">
+        </li>
+        <li class="nav-item">
+          <p class="nav-link disabled">Copyright Info</p>
+        </li>
+      </ul>
 
 </div>
 </body>
