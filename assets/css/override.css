@@ -23,7 +23,7 @@ h1, h2, p {
 .centered {
     position: absolute;
     top: 65%;
-    left: 25%;
+    left: 32%;
     transform: translate(-50%, -50%);
     background-color: #4aaaa5;
     padding: 5px;
